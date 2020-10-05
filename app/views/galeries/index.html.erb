@@ -1,0 +1,11 @@
+
+<% if !sculptures %>
+  <h2>GALERIE DE PEINTURES</h2>
+    <% @galeries.each do %>
+      <div class="card-galerie">
+        <p></p>
+        <%= cl_image_tag @galerie %>
+      </div>
+    <% end %>
+  <% else %>
+<% end %>
