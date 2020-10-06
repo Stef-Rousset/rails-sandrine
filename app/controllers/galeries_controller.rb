@@ -3,6 +3,7 @@ class GaleriesController < ApplicationController
 
   def index
     @galeries = Galerie.all
+    @sculptures_galerie = Galerie.find_by(name: "Entre Terre et Pierres")
   end
 
   def show
@@ -12,7 +13,7 @@ class GaleriesController < ApplicationController
   private
 
   def galerie_params
-    params.require(:galerie).permit(:name,:description)
+    params.require(:galerie).permit(:name,:description, :photo)
   end
 
 end

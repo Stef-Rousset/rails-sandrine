@@ -1,15 +1,15 @@
 
 <h2>GALERIE DE PEINTURES</h2>
   <% @galeries.each do |galerie| %>
-    <% next if galerie == galerie.sculptures %>
-      <div class="card-galerie">
+    <% next if galerie.name == @sculptures_galerie.name %>
+      <div class="card-galery">
         <p><%= galerie.description %></p>
-        <%= cl_image_tag galerie.photo.key %>
+        <%= cl_image_tag galerie.photo.key, height: 300, width: 400, crop: :fill %>
       </div>
   <% end %>
 
 <h2>GALERIE DE SCULPTURES</h2>
-  <div class="card-galerie">
-    <p><%= galerie.sculptures.description %></p>
-    <%= cl_image_tag galerie.sculptures.photo.key %>
+  <div class="card-galery">
+    <p><%= @sculptures_galerie.description %></p>
+    <%= cl_image_tag @sculptures_galerie.photo.key, height: 300, width: 400, crop: :fill %>
   </div>
