@@ -1,15 +1,23 @@
-
-<h2>GALERIE DE PEINTURES</h2>
-  <% @galeries.each do |galerie| %>
-    <% next if galerie.name == @sculptures_galerie.name %>
-      <div class="card-galery">
-        <p><%= galerie.description %></p>
-        <%= cl_image_tag galerie.photo.key, height: 300, width: 400, crop: :fill %>
-      </div>
-  <% end %>
-
-<h2>GALERIE DE SCULPTURES</h2>
-  <div class="card-galery">
-    <p><%= @sculptures_galerie.description %></p>
-    <%= cl_image_tag @sculptures_galerie.photo.key, height: 300, width: 400, crop: :fill %>
+<div class="container">
+  <div class="galeries">
+    <div class="galerie-peinture">
+      <h2>GALERIE DE PEINTURES</h2>
+        <% @galeries.each do |galerie| %>
+          <% next if galerie.name == @sculptures_galerie.name %>
+            <div class="card-galery">
+              <p><%= galerie.description %></p>
+              <%= cl_image_tag galerie.photo.key, height: 200, width: 500, crop: :fill %>
+            </div>
+        <% end %>
+    </div>
+    <div class="galerie-sculptures">
+      <h2>GALERIE DE SCULPTURES</h2>
+        <div class="card-galery">
+          <p><%= @sculptures_galerie.description %></p>
+          <%= cl_image_tag @sculptures_galerie.photo.key, height: 200, width: 500, crop: :fill %>
+        </div>
+    </div>
   </div>
+</div>
+
+
