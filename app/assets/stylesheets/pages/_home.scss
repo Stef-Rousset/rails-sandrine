@@ -1,12 +1,73 @@
 // Specific CSS for your home-page
 
-// .container {
-//   background-image:
-// }
-.container {
+.home-container {
+  background-size: cover;
+  background-position: center;
+  height: 100vh;
+  position: relative;
   h2 {
   color: white;
   font-style: italic;
-  font-size: 30px;
+  font-size: 32px;
+  padding-left: 8%;
+  position: absolute;
+  bottom: 70px;
+    }
+}
+.home-navcolumn {
+  margin: 20px 20px;
+  height: 90vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: relative;
+}
+.artiste {
+  display: flex;
+  flex-direction: column;
+  align-items: left;
+}
+h1 {
+color: $blue;
+font-weight: bold;
+font-size: 30px;
+}
+.art {
+  display: flex;
+  margin-top: 30px;
+  margin-left: 30px;
+  h3 {
+    color: black;
+    font-size: 24px;
   }
+}
+.first {
+  padding-right: 15px;
+}
+.home-menu {
+  display: flex;
+  flex-direction: column;
+  align-items: left;
+  margin-top: 30px;
+}
+.first-trait {
+  width: 50%;
+  background-color: black;
+  height: 1px;
+  margin-top: 40px;
+}
+.second-trait {
+  width: 50%;
+  background-color: black;
+  height: 1px;
+  margin-top: 40px;
+}
+.home-footer {
+  position: absolute;
+  bottom: 0px;
+  display: flex;
+  i {
+    padding-right: 30px;
+  }
+
 }

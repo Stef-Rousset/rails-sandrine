@@ -1,9 +1,11 @@
 .navcolumn {
-  margin: 20px 0px;
+  margin: 20px 20px;
   height: 50%;
   display: flex;
   flex-direction: column;
   align-items: center;
+  position: sticky;
+  top: 10px;
 }
 .artiste {
   display: flex;
@@ -38,4 +40,12 @@ font-size: 30px;
   background-color: black;
   height: 1px;
   margin-top: 40px;
+}
+.footer {
+  display:flex;
+  margin-top: 100%;
+  i {
+    padding-right: 30px;
+  }
+
 }
