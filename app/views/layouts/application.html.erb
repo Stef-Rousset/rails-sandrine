@@ -12,9 +12,9 @@
   </head>
 
   <body>
-    <%= render 'shared/navbar' %>
+<!--     <%= render 'shared/navbar' %> -->
     <div class="main-container">
-      <%= render 'shared/menu' %>
+      <%= render 'shared/menu' unless (controller.controller_name == "pages" && controller.action_name == "home")%>
       <%= render 'shared/flashes' %>
       <%= yield %>
     </div>
