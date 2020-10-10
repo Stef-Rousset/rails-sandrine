@@ -11,17 +11,17 @@
   h2 {
   color: $ligth-blue;
   font-weight: bold;
-  font-size: 30px;
-  margin-bottom: 40px;
+  font-size: 26px;
+  margin-bottom: 30px;
+  margin-right: 0px;
   }
 }
 .card-galery {
   display: flex;
   margin-bottom: 40px;
-  p {
+  height: 160px;
+  .description {
     margin-right: 30px;
-    width: 40%;
-    text-align: justify;
   }
 }
 .card-galery h4 {
@@ -35,10 +35,9 @@
 .card-galery-two {
   display: flex;
   margin-bottom: 40px;
-  p {
+  height: 160px;
+  .description {
     margin-left: 30px;
-    width: 40%;
-    text-align: justify;
   }
 }
 .card-galery-two h4 {
@@ -49,7 +48,17 @@
   padding-left: 3%;
   text-shadow: 1px 1px 1px grey;
 }
-
+.description {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 40%;
+  text-align: justify;
+  overflow: auto;
+    a:hover {
+      text-decoration: none;
+    }
+}
 .photo {
   width: 60%;
   background-size: cover;

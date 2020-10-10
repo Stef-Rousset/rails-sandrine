@@ -15,12 +15,13 @@
 h1 {
 color: $blue;
 font-weight: bold;
-font-size: 30px;
+font-size: 26px;
 }
 .art {
   display: flex;
   margin-top: 30px;
   margin-left: 30px;
+  position: relative;
   h3 {
     color: black;
     font-size: 24px;
@@ -44,6 +45,8 @@ font-size: 30px;
 .footer {
   display:flex;
   margin-top: 100%;
+  position: absolute;
+  bottom: 30px;
   i {
     padding-right: 30px;
   }

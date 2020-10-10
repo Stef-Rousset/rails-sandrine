@@ -44,3 +44,18 @@ fifth_galery = Galerie.create!(name: "Entre Terre et Pierres", description: "Lor
 fifth_galery.photo.attach(io: File.open('app/assets/images/sculpture.jpg'), filename: 'sculpture.jpg')
 
 puts "Galeries done"
+
+puts "Delete art_pieces"
+ArtPiece.destroy_all
+puts "Creating art_pieces"
+art_piece_one = ArtPiece.create!(title: "Le champ des bateaux", description: "40 × 40", year: 2016, galerie: first_galery)
+art_piece_one.photo.attach(io: File.open('app/assets/images/chant.jpg'), filename: 'chant.jpg')
+
+art_piece_two = ArtPiece.create!(title: "La cueillette", description: "60 × 60", year: 2016, galerie: first_galery)
+art_piece_two.photo.attach(io: File.open('app/assets/images/cueillette.jpg'), filename: 'cueillette.jpg')
+
+art_piece_three = ArtPiece.create!(title: "Le village", description: "22 × 33", year: 2018, galerie: first_galery)
+art_piece_three.photo.attach(io: File.open('app/assets/images/village.jpg'), filename: 'village.jpg')
+
+
+puts "art_pieces done"

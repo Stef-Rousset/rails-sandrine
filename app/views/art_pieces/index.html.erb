@@ -1,0 +1,12 @@
+<div class="container">
+  <h2><%= @galerie.name %></h2>
+  <div class="art_pieces">
+    <% @art_pieces.each do |art_piece|%>
+      <div class="card-art-piece">
+        <div class="art_piece-img" style="background-image: url('<%= cl_image_path art_piece.photo.key %>')">
+        </div>
+        <h4 ><%= art_piece.title %> (<%= art_piece.year%>)</h4>
+      </div>
+    <% end %>
+  </div>
+</div>

@@ -13,7 +13,7 @@ class GaleriesController < ApplicationController
   private
 
   def galerie_params
-    params.require(:galerie).permit(:name,:description, :photo)
+    params.require(:galerie).permit(:name,:description, :photo, :art_pieces)
   end
 
 end
