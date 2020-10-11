@@ -10,25 +10,18 @@
 .artiste {
   display: flex;
   flex-direction: column;
-  align-items: left;
+  align-items: center;
+  position: relative;
 }
 h1 {
 color: $blue;
 font-weight: bold;
 font-size: 26px;
 }
-.art {
-  display: flex;
-  margin-top: 30px;
-  margin-left: 30px;
-  position: relative;
-  h3 {
-    color: black;
-    font-size: 24px;
-  }
-}
-.first {
-  padding-right: 15px;
+h3 {
+ color: black;
+ font-size: 24px;
+ margin-top: 25px;
 }
 .menu {
   display: flex;
