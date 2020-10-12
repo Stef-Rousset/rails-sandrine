@@ -1,0 +1,45 @@
+<div class="container">
+  <div class="galeries">
+    <div class="galerie-peinture">
+      <h2>GALERIE DE PEINTURES</h2>
+        <% @galleries.each_with_index do |gallery, index| %>
+          <% next if gallery.name == @sculptures_gallery.name %>
+          <% if index.even? %>
+            <div class="card-galery">
+              <div class="description">
+                <p><%= gallery.description %></p>
+                <%= link_to "Voir les oeuvres", gallery_art_pieces_path(gallery), class: "btn-blue" %>
+              </div>
+              <div class="photo" style="background-image: url('<%= cl_image_path gallery.photo.key %>')">
+                <h4><%= gallery.name %></h4>
+              </div>
+            </div>
+            <% else %>
+              <div class="card-galery-two">
+                <div class="photo" style="background-image: url('<%= cl_image_path gallery.photo.key%>')">
+                  <h4><%= gallery.name %></h4>
+                </div>
+                <div class="description">
+                 <p><%= gallery.description %></p>
+                 <%= link_to "Voir les oeuvres", gallery_art_pieces_path(gallery), class: "btn-blue" %>
+                </div>
+              </div>
+            <% end %>
+        <% end %>
+    </div>
+    <div class="galerie-sculptures">
+      <h2>GALERIE DE SCULPTURES</h2>
+        <div class="card-galery">
+          <div class="description">
+            <p><%= @sculptures_gallery.description %></p>
+            <%= link_to "Voir les oeuvres", gallery_art_pieces_path(@sculptures_gallery), class: "btn-blue" %>
+          </div>
+          <div class="photo" style="background-image: url('<%= cl_image_path @sculptures_gallery.photo.key%>')">
+            <h4><%= @sculptures_gallery.name %></h4>
+          </div>
+        </div>
+    </div>
+  </div>
+</div>
+
+
