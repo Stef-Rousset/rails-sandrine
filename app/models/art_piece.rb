@@ -5,5 +5,5 @@ class ArtPiece < ApplicationRecord
   validates :title, presence: true
   validates :year, presence: true
   validates :description, presence: true
-  validates :photo, presence: true
+  # validates :photo, presence: true
 end
