@@ -30,6 +30,9 @@ h2 {
   background-size: cover;
   background-position: center;
   background-color: $light-gray;
+  &:hover {
+    opacity: 0.9;
+  }
 }
 .modal-body {
   display: flex;
@@ -46,4 +49,12 @@ h2 {
 }
 .modal-title {
   color: black;
+}
+.lien {
+  margin-top: 30px;
+  text-align: center;
+  a:hover {
+    text-decoration: none;
+    color: grey;
+  }
 }
