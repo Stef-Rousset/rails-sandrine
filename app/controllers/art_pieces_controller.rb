@@ -2,21 +2,21 @@ class ArtPiecesController < ApplicationController
   skip_before_action :authenticate_user!, only: [ :index, :new, :create]
 
   def index
-    @galerie = Galerie.find(params[:galery_id])
-    @art_pieces = ArtPiece.where(galerie: @galerie)
+    @gallery = Gallery.find(params[:gallery_id])
+    @art_pieces = ArtPiece.where(gallery: @gallery)
   end
 
   def new
-    @galerie = Galerie.find(params[:galery_id])
+    @gallery = Gallery.find(params[:gallery_id])
     @art_piece = ArtPiece.new
   end
 
   def create
     @art_piece = ArtPiece.new(art_piece_params)
-    @galerie = Galerie.find(params[:galery_id])
-    @art_piece.galerie = @galerie
+    @gallery = Gallery.find(params[:gallery_id])
+    @art_piece.gallery = @gallery
     if @art_piece.save!
-      redirect to galery_art_pieces_path(@galerie)
+      redirect to gallery_art_pieces_path(@gallery)
     else
       render :new
     end
@@ -25,7 +25,7 @@ class ArtPiecesController < ApplicationController
 
 
   def art_piece_params
-    params.require(:art_piece).permit(:title, :description, :year, :galerie_id)
+    params.require(:art_piece).permit(:title, :description, :year, :gallery_id)
   end
 
 end

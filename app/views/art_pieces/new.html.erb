@@ -1,7 +1,7 @@
 <div class="container">
   <h2>Ajouter une nouvelle oeuvre</h2>
   <div class="formulaire">
-    <%= simple_form_for ([@galerie, @art_piece]) do |f| %>
+    <%= simple_form_for ([@gallery, @art_piece]) do |f| %>
     <%= f.input :title, :label => "Titre", :placeholder => "titre de l'oeuvre" %>
     <%= f.input :year, :label => "Année", :placeholder => "année de création" %>
     <%= f.input :description, :label => "Description", :placeholder => "dimensions, technique utilisée.." %>

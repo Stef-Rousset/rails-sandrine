@@ -1,5 +1,5 @@
 class ArtPiece < ApplicationRecord
-  belongs_to :galerie
+  belongs_to :gallery
   has_one_attached :photo
 
   validates :title, presence: true
