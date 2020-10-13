@@ -26,7 +26,7 @@ third_gallery = Gallery.create!(name: "Intérieurs chimériques", description: "
   Sont-ils le fruit d’une imagination trop fertile, habitent-ils  nos intérieurs ou se sont-ils perdus dans le décor d’une scène, dans le décor de la toile ? Mystère.")
 third_gallery.photo.attach(io: File.open('app/assets/images/interieur.jpg'), filename: 'interieur.jpg')
 
-fourth_gallery = Gallery.create!(name: "Paysages et vagabondages", description: "Drapeaux multicolores  virevoltant, petites cabanes endormies, eaux miroitantes, vent qui souffle dans les voiles, qui souffle sur les ailes avant de mourir en découvrant la ville.
+fourth_gallery = Gallery.create!(name: "Paysages et vagabondages", description: "Drapeaux multicolores  virevoltant, cabanes endormies, eaux miroitantes, vent qui souffle dans les voiles, qui souffle sur les ailes avant de mourir en découvrant la ville.
   Reflets de paysages connus, impressions de déjà vu. Perdons-nous pour mieux les découvrir.")
 fourth_gallery.photo.attach(io: File.open('app/assets/images/vagabondage.jpg'), filename: 'vagabondage.jpg')
 
