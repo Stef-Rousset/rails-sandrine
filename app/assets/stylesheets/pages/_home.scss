@@ -42,17 +42,26 @@ h3 {
   align-items: left;
   margin-top: 30px;
 }
-.first-trait {
-  width: 50%;
-  background-color: black;
-  height: 1px;
-  margin-top: 40px;
+.home-menu a {
+  font-size: 20px;
+  color: black;
+  padding-top: 10px;
+  &:hover {
+    text-decoration: none;
+    color: $ligth-blue;
+  }
 }
-.second-trait {
-  width: 50%;
-  background-color: black;
-  height: 1px;
-  margin-top: 40px;
+.trait {
+  border-top: 1px solid black;
+}
+h4 {
+  font-size: 20px;
+  color: black;
+  padding-top: 10px;
+}
+.trait-bis {
+  padding-bottom: 10px;
+  border-bottom: 1px solid black;
 }
 .home-footer {
   position: absolute;
@@ -61,5 +70,4 @@ h3 {
   i {
     padding-right: 30px;
   }
-
 }
