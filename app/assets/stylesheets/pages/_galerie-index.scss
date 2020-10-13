@@ -1,10 +1,10 @@
-.galeries {
+.galleries {
   margin-top: 20px;
   display:flex;
   flex-direction: column;
   align-items: right;
 }
-.galerie-peinture, .galerie-sculptures {
+.gallery-paintings, .gallery-sculptures {
   display: flex;
   flex-direction: column;
   align-items: flex-end;
@@ -16,7 +16,7 @@
   margin-right: 0px;
   }
 }
-.card-galery {
+.card-gallery {
   display: flex;
   margin-bottom: 40px;
   height: 160px;
@@ -24,7 +24,7 @@
     margin-right: 30px;
   }
 }
-.card-galery h4 {
+.card-gallery h4 {
   color: white;
   font-style: italic;
   font-size: 30px;
@@ -32,7 +32,7 @@
   padding-left: 3%;
   text-shadow: 1px 1px 1px grey;
 }
-.card-galery-two {
+.card-gallery-two {
   display: flex;
   margin-bottom: 40px;
   height: 160px;
@@ -40,7 +40,7 @@
     margin-left: 30px;
   }
 }
-.card-galery-two h4 {
+.card-gallery-two h4 {
   color: white;
   font-style: italic;
   font-size: 30px;
@@ -61,7 +61,7 @@
     }
 }
 .description p {
-  font-size: 16px;
+  font-size: 15px;
 }
 .photo {
   width: 60%;
