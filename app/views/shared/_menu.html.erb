@@ -3,13 +3,13 @@
     <h1>SANDRINE ROUSSET</h1>
     <h3>Peintures&ensp;Sculptures</h3> <!-- crée un espace double -->
   </div>
-  <div class="trait"></div>
+<!--   <div class="trait"></div> -->
   <div class="menu">
-    <h4>Quelques mots</h4>
+    <%= link_to "Home", root_path, class: "trait" %>
+    <%= link_to "Quelques mots", about_path %>
     <%= link_to "Galerie en ligne", galleries_path %>
     <h4>En cours</h4>
-    <h4>Contact</h4>
+    <h4 class="trait-bis">Contact</h4>
   </div>
-  <div class="trait"></div>
 </div>
 
