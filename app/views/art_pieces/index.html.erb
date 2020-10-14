@@ -3,9 +3,13 @@
   <div class="art_pieces">
     <% @art_pieces.each do |art_piece|%>
       <div class="card-art-piece">
-        <div class="art_piece-img" style="background-image: url('<%= cl_image_path art_piece.photo.key%>')" data-toggle="modal" data-target="#modal<%= art_piece.id %>">
-        </div>
+        <% if art_piece.photo.attached? %>
+          <div class="art_piece-img" style="background-image: url('<%= cl_image_path art_piece.photo.key%>')" data-toggle="modal" data-target="#modal<%= art_piece.id %>">
+          </div>
+        <% end %>
         <h4 ><%= art_piece.title %> (<%= art_piece.year%>)</h4>
+        <!--   a modif pour ne rendre accessible qu'a admin -->
+        <%= link_to '<i class="fas fa-trash-alt"></i>'.html_safe, art_piece_path(art_piece), method: :delete, data: { confirm: "Are you sure?" } %>
         <!-- Modal -->
         <div class="modal fade" id="modal<%= art_piece.id %>" tabindex="-1" role="dialog" aria-labelledby="modal<%= art_piece.id %>Label" aria-hidden="true">
           <div class="modal-dialog" role="document">
@@ -17,7 +21,9 @@
                 </button>
               </div>
               <div class="modal-body">
-              <%= cl_image_tag art_piece.photo.key, width: 300, crop: :pad %>
+              <% if art_piece.photo.attached? %>
+                <%= cl_image_tag art_piece.photo.key, width: 300, crop: :pad %>
+              <% end %>
               <p>Dimensions (en cm): <%= art_piece.description %></p>
               <p>(<%= art_piece.year%>)</p>
               </div>
@@ -32,6 +38,7 @@
     <% end %>
   </div>
   <div class="lien">
+    <!--   a modif pour ne rendre accessible qu'a admin -->
     <%= link_to "Ajouter une oeuvre", new_gallery_art_piece_path(@gallery), class: "btn-blue" %>
   </div>
 </div>
