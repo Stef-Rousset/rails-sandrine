@@ -6,4 +6,5 @@ Rails.application.routes.draw do
   resources :galleries, only: [:index, :show]  do
     resources :art_pieces, only: [:index, :new, :create ]
   end
+  resources :art_pieces, only: [:destroy]
 end
