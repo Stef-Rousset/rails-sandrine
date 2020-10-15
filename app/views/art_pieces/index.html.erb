@@ -7,7 +7,7 @@
           <div class="art_piece-img" style="background-image: url('<%= cl_image_path art_piece.photo.key%>')" data-toggle="modal" data-target="#modal<%= art_piece.id %>">
           </div>
         <% end %>
-        <h4 ><%= art_piece.title %> (<%= art_piece.year%>)</h4>
+        <h4 ><%= art_piece.title %></h4>
         <!--   a modif pour ne rendre accessible qu'a admin -->
         <%= link_to '<i class="fas fa-trash-alt"></i>'.html_safe, art_piece_path(art_piece), method: :delete, data: { confirm: "Are you sure?" } %>
         <!-- Modal -->

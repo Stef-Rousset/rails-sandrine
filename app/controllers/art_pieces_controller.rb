@@ -1,6 +1,6 @@
 class ArtPiecesController < ApplicationController
   skip_before_action :authenticate_user!, only: [ :index, :new, :create, :destroy]
-  # a modif pour autoriser new create et delete seulement a admin
+  # a modif pour autoriser new create et destroy seulement a admin
   def index
     @gallery = Gallery.find(params[:gallery_id])
     @art_pieces = ArtPiece.where(gallery: @gallery)

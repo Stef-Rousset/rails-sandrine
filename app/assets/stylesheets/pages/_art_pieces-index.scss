@@ -1,6 +1,7 @@
 .art_pieces {
   display: flex;
   justify-content: space-between;
+  flex-wrap: wrap;
 }
 h2 {
   text-align: right;
