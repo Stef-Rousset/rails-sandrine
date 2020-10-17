@@ -31,6 +31,7 @@ h2 {
   background-size: cover;
   background-position: center;
   background-color: $light-gray;
+  cursor: pointer;
   &:hover {
     opacity: 0.9;
   }

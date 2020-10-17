@@ -1,0 +1,20 @@
+<div class="contact-container">
+  <h2>Contact</h2>
+  <div class="contact-image" style='background-image: url("https://res.cloudinary.com/du5qhnalh/image/upload/v1602918262/contact-2_rvhmog.jpg")'>
+  </div>
+  <div class="form">
+    <%= simple_form_for @contact do |f| %>
+
+    <%= f.input :first_name, :required => true, :label => "Votre prénom" %>
+    <%= f.input :last_name, :required => true, :label => "Votre nom" %>
+    <%= f.input :email, :required => true, :label => "Votre email" %>
+    <%= f.input :message, :as => :text, :required => true, :label => "Votre message", :input_html => {:rows => 6} %>
+    <%= f.submit 'Envoyer', class: "btn-blue form-btn" %>
+  <% end %>
+  </div>
+  <% flash.each do |message_type, message| %>
+  <div class="<%= message_type %>">
+    <%= message %>
+  </div>
+<% end %>
+</div>
