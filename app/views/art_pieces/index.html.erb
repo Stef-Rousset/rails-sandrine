@@ -3,13 +3,12 @@
   <div class="art_pieces">
 
     <% @art_pieces.each do |art_piece|%>
-
       <div class="card-art-piece">
         <% if art_piece.photo.attached? %>
           <div class="art_piece-img" style="background-image: url('<%= cl_image_path art_piece.photo.key%>')" data-toggle="modal" data-target="#modal<%= art_piece.id %>">
           </div>
         <% end %>
-        <h4 ><%= art_piece.title %></h4>
+        <h4><%= art_piece.title %></h4>
         <!--   a modif pour ne rendre accessible qu'a admin -->
         <%= link_to '<i class="fas fa-trash-alt"></i>'.html_safe, art_piece_path(art_piece), method: :delete, data: { confirm: "Are you sure?" } %>
         <!-- Modal -->
@@ -31,7 +30,7 @@
               <p>(<%= art_piece.year%>)</p>
               </div>
               <div class="modal-footer">
-                <%= link_to "Plus d'informations", "#", class: "btn-blue" %>
+                <%= link_to "Plus d'informations", contacts_path, class: "btn-blue"%>
                 <button type="button" class="btn btn-blue" data-dismiss="modal">Close</button>
               </div>
             </div>
