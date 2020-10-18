@@ -22,15 +22,15 @@ second_gallery = Gallery.create!(name: "Arbres et histoires", description: "Arbr
   Arbre à oiseaux, arbre-nourricier, arbre pour se reposer. Il est le témoin du temps qui passe, le gardien des secrets oubliés.")
 second_gallery.photo.attach(io: File.open('app/assets/images/arbre.jpg'), filename: 'arbre.jpg')
 
-third_gallery = Gallery.create!(name: "Intérieurs chimériques", description: "Un songe, un rêve,  une ombre, une présence, une trace, une apparition, un guerrier…
+third_gallery = Gallery.create!(name: "Intérieurs chimériques", description: "Un songe, un rêve, une ombre, une présence, une trace, une apparition, un guerrier…
   Sont-ils le fruit d’une imagination trop fertile, habitent-ils  nos intérieurs ou se sont-ils perdus dans le décor d’une scène, dans le décor de la toile ? Mystère.")
 third_gallery.photo.attach(io: File.open('app/assets/images/interieur.jpg'), filename: 'interieur.jpg')
 
-fourth_gallery = Gallery.create!(name: "Paysages et vagabondages", description: "Drapeaux multicolores  virevoltant, cabanes endormies, eaux miroitantes, vent qui souffle dans les voiles, qui souffle sur les ailes avant de mourir en découvrant la ville.
+fourth_gallery = Gallery.create!(name: "Paysages et vagabondages", description: "Drapeaux multicolores virevoltant, cabanes endormies, eaux miroitantes, vent qui souffle dans les voiles, qui souffle sur les ailes avant de mourir en découvrant la ville.
   Reflets de paysages connus, impressions de déjà vu. Perdons-nous pour mieux les découvrir.")
 fourth_gallery.photo.attach(io: File.open('app/assets/images/vagabondage.jpg'), filename: 'vagabondage.jpg')
 
-fifth_gallery = Gallery.create!(name: "Entre Terre et Pierres", description: "Un sourire, un regard,  une moue, un froissement, une pose, une posture, une expression, un détail qui dit tout, un peu de finesse et de délicatesse et au travers : un brin de vie.")
+fifth_gallery = Gallery.create!(name: "Entre Terre et Pierres", description: "Un sourire, un regard, une moue, un froissement, une pose, une posture, une expression, un détail qui dit tout, un peu de finesse et de délicatesse et au travers : un brin de vie.")
 fifth_gallery.photo.attach(io: File.open('app/assets/images/sculpture.jpg'), filename: 'sculpture.jpg')
 
 puts "Galleries done"
