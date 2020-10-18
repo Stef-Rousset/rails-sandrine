@@ -38,13 +38,13 @@ puts "Galleries done"
 puts "Delete art_pieces"
 ArtPiece.destroy_all
 puts "Creating art_pieces"
-art_piece_one = ArtPiece.create!(title: "Le champ des bateaux", description: "40 × 40", year: 2016, gallery: first_gallery)
+art_piece_one = ArtPiece.create!(title: "Le champ des bateaux", dimension: "40 × 40", year: 2016, gallery: first_gallery, description: "Acrylique")
 art_piece_one.photo.attach(io: File.open('app/assets/images/chant.jpg'), filename: 'chant.jpg')
 
-art_piece_two = ArtPiece.create!(title: "La cueillette", description: "60 × 60", year: 2016, gallery: first_gallery)
+art_piece_two = ArtPiece.create!(title: "La cueillette", dimension: "60 × 60", year: 2016, gallery: first_gallery, description: "Acrylique")
 art_piece_two.photo.attach(io: File.open('app/assets/images/cueillette.jpg'), filename: 'cueillette.jpg')
 
-art_piece_three = ArtPiece.create!(title: "Le village", description: "22 × 33", year: 2018, gallery: first_gallery)
+art_piece_three = ArtPiece.create!(title: "Le village", dimension: "22 × 33", year: 2018, gallery: first_gallery, description: "Acrylique")
 art_piece_three.photo.attach(io: File.open('app/assets/images/village.jpg'), filename: 'village.jpg')
 
 
