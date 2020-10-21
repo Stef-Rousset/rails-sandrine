@@ -6,7 +6,7 @@
     <%= f.input :year, :label => "Année de création", :placeholder => "2015" %>
     <%= f.input :dimension, :label => "Dimensions", :placeholder => "40×40" %>
     <%= f.input :description, :label => "Description", :placeholder => "Huile sur toile" %>
-    <%= f.input :photo, as: :file, required: true %>
+    <%= f.input :photos, as: :file,  input_html: { multiple: true } %>
     <%= f.submit "Enregistrer", class: "btn-blue" %>
   <% end %>
   </div>

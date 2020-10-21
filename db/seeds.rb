@@ -13,9 +13,9 @@ Gallery.destroy_all
 puts "Creating galleries"
 
 
-first_gallery = Gallery.create!(name: "Balade poétique", description: "Fées, anges, troubadours d’un soir. Air de luth, de flûte, chant de bateaux.
+first_gallery = Gallery.create!(name: 'Balade poétique', description: 'Fées, anges, troubadours d’un soir. Air de luth, de flûte, chant de bateaux.
   Villages du bout du monde et d’ici. Châteaux de seigneur de la ville, de pacotille. Collines et routes serpentines.
-  Bienvenue en des temps lointains où se perdre en chemin.")
+  Bienvenue en des temps lointains où se perdre en chemin.')
 first_gallery.photo.attach(io: File.open('app/assets/images/balade.jpg'), filename: 'balade.jpg')
 
 second_gallery = Gallery.create!(name: "Arbres et histoires", description: "Arbre fantaisiste, majestueux, éclatant, lumineux. Arbre-refuge, compagnon de jeu, arbre des amoureux.
@@ -39,13 +39,13 @@ puts "Delete art_pieces"
 ArtPiece.destroy_all
 puts "Creating art_pieces"
 art_piece_one = ArtPiece.create!(title: "Le champ des bateaux", dimension: "40 × 40", year: 2016, gallery: first_gallery, description: "Acrylique")
-art_piece_one.photo.attach(io: File.open('app/assets/images/chant.jpg'), filename: 'chant.jpg')
+art_piece_one.photos.attach(io: File.open('app/assets/images/chant.jpg'), filename: 'chant.jpg')
 
 art_piece_two = ArtPiece.create!(title: "La cueillette", dimension: "60 × 60", year: 2016, gallery: first_gallery, description: "Acrylique")
-art_piece_two.photo.attach(io: File.open('app/assets/images/cueillette.jpg'), filename: 'cueillette.jpg')
+art_piece_two.photos.attach(io: File.open('app/assets/images/cueillette.jpg'), filename: 'cueillette.jpg')
 
 art_piece_three = ArtPiece.create!(title: "Le village", dimension: "22 × 33", year: 2018, gallery: first_gallery, description: "Acrylique")
-art_piece_three.photo.attach(io: File.open('app/assets/images/village.jpg'), filename: 'village.jpg')
+art_piece_three.photos.attach(io: File.open('app/assets/images/village.jpg'), filename: 'village.jpg')
 
 
 puts "art_pieces done"

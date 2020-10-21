@@ -1,10 +1,10 @@
 class ArtPiece < ApplicationRecord
   belongs_to :gallery
-  has_one_attached :photo
+  has_many_attached :photos
 
   validates :title, presence: true
   validates :year, presence: true
   validates :description, presence: true
   validates :dimension, presence: true
-  # validates :photo, presence: true
+
 end
