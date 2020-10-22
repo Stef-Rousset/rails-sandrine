@@ -28,6 +28,9 @@
                             <% if index == 0 %>
                               <div class="carousel-item active">
                                 <%= cl_image_tag photo.key, alt: "painting of #{art_piece.title}", width: 400 %>
+                                <p>Dimensions (en cm): <%= art_piece.dimension %></p>
+                                <p><%= art_piece.description %> </p>
+                                <p>(<%= art_piece.year%>)</p>
                               </div>
                             <% else %>
                               <div class="carousel-item">
