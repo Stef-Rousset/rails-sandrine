@@ -31,6 +31,7 @@ h2 {
   background-size: cover;
   background-position: center;
   background-color: $light-gray;
+  box-shadow: 0 0 10px rgba(0,0,0,0.2);
   cursor: pointer;
   &:hover {
     opacity: 0.9;
@@ -59,4 +60,7 @@ h2 {
     text-decoration: none;
     color: grey;
   }
+}
+.carousel-item {
+  text-align: center;
 }

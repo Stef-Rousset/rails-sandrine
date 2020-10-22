@@ -30,7 +30,7 @@ class ArtPiecesController < ApplicationController
 
   private
   def art_piece_params
-    params.require(:art_piece).permit(:title, :description, :dimension, :year, :gallery_id, :photo)
+    params.require(:art_piece).permit(:title, :description, :dimension, :year, :gallery_id, photos: [])
   end
 
 end
