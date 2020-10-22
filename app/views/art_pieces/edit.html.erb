@@ -1,12 +1,12 @@
 <div class="container">
-  <h2>Ajouter une nouvelle oeuvre</h2>
+  <h2>Modifier une oeuvre</h2>
   <div class="formulaire">
     <%= simple_form_for ([@gallery, @art_piece]) do |f| %>
     <%= f.input :title, :label => "Titre", :placeholder => "titre de l'oeuvre" %>
     <%= f.input :year, :label => "Année de création", :placeholder => "2015" %>
     <%= f.input :dimension, :label => "Dimensions", :placeholder => "40×40" %>
     <%= f.input :description, :label => "Description", :placeholder => "Huile sur toile" %>
-    <%= f.input :photos, as: :file,  input_html: { multiple: true }, :label => "Sélectionner vos photos"  %>
+    <%= f.input :photos, as: :file,  input_html: { multiple: true } %>
     <%= f.submit "Enregistrer", class: "btn-blue" %>
   <% end %>
   </div>
