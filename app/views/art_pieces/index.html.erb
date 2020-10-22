@@ -9,7 +9,10 @@
             <div class="art_piece-img" style="background-image: url('<%= cl_image_path art_piece.photos[0].key %>')" data-toggle="modal" data-target="#modal<%= art_piece.id %>">
             </div>
             <h4 ><%= art_piece.title %></h4>
-            <%= link_to '<i class="fas fa-trash-alt"></i>'.html_safe, art_piece_path(art_piece), method: :delete, data: { confirm: "Are you sure?" } %>
+            <div class="liens">
+              <%= link_to '<i class="fas fa-trash-alt"></i>'.html_safe, art_piece_path(art_piece), method: :delete, data: { confirm: "Are you sure?" } %>
+              <%= link_to '<i class="far fa-edit"></i>'.html_safe, edit_gallery_art_piece_path(@gallery, art_piece) %>
+            </div>
             <!-- Modal -->
               <div class="modal fade" id="modal<%= art_piece.id %>" tabindex="-1" role="dialog" aria-labelledby="modal<%= art_piece.id %>Label" aria-hidden="true">
                 <div class="modal-dialog" role="document">
@@ -22,7 +25,7 @@
                     </div>
                     <div class="modal-body">
                <!--        carousel -->
-                      <div id="carouselExampleControls" class="carousel slide" data-ride="carousel">
+                      <div id="carouselExampleControls" class="carousel slide" data-ride="carousel" data-interval="3000" >
                         <div class="carousel-inner">
                           <% art_piece.photos.each_with_index do |photo, index| %>
                             <% if index == 0 %>
@@ -65,7 +68,7 @@
         </div>
     <% end %>
   </div>
-  <div class="lien">
+  <div class="ajout">
     <!--   a modif pour ne rendre accessible qu'a admin -->
     <%= link_to "Ajouter une oeuvre", new_gallery_art_piece_path(@gallery), class: "btn-blue" %>
   </div>
