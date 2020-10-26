@@ -1,3 +1,7 @@
+<% content_for :meta_title, "Sandrine Rousset artiste peintre et sculptrice" %>
+<% content_for :meta_description, "Bienvenue sur le site de Sandrine Rousset, artiste peintre et sculptrice" %>
+<% content_for :meta_image, cl_image_path("banner.jpg") %>
+
 <div class="home-navcolumn">
   <div class="artiste">
     <h1>SANDRINE ROUSSET</h1>
@@ -9,6 +13,7 @@
     <%= link_to "Contact", contacts_path, class: "trait-bis" %>
   </div>
   <div class="home-footer">
+   <!--  <%= render 'shared/navbar' %> -->
     <p><i class="fab fa-facebook-f"></i></p>
     <p>S'inscrire à la newsletter</p>
   </div>
