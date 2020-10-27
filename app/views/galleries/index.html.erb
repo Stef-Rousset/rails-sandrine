@@ -14,21 +14,21 @@
                 <p><%= gallery.description %></p>
                 <%= link_to "Voir les oeuvres", gallery_art_pieces_path(gallery), class: "btn-blue" %>
               </div>
-              <div class="photo" style="background-image: url('<%= cl_image_path gallery.photo.key %>')">
-                <h4><%= gallery.name %></h4>
-              </div>
-            </div>
-            <% else %>
-              <div class="card-gallery-two">
-                <div class="photo" style="background-image: url('<%= cl_image_path gallery.photo.key%>')">
+                <div class="photo" style="background-image: url('<%= cl_image_path gallery.photo.key %>')">
                   <h4><%= gallery.name %></h4>
                 </div>
-                <div class="description">
-                 <p><%= gallery.description %></p>
-                 <%= link_to "Voir les oeuvres", gallery_art_pieces_path(gallery), class: "btn-blue" %>
-                </div>
+            </div>
+          <% else %>
+            <div class="card-gallery-two">
+              <div class="photo" style="background-image: url('<%= cl_image_path gallery.photo.key%>')">
+                <h4><%= gallery.name %></h4>
               </div>
-            <% end %>
+              <div class="description">
+               <p><%= gallery.description %></p>
+               <%= link_to "Voir les oeuvres", gallery_art_pieces_path(gallery), class: "btn-blue" %>
+              </div>
+            </div>
+          <% end %>
         <% end %>
     </div>
     <div class="gallery-sculptures">
@@ -46,4 +46,26 @@
   </div>
 </div>
 
+<!-- <script>
+  img = document.querySelector('.photo');
+  img.addEventListener ('mouseover', (event) => {
+    console.log('bla')
 
+  });
+
+
+  // div = document.querySelector('.transfo');
+  // div.addEventListener ('mouseover', (event) => {
+  //   button = document.querySelector('.one');
+  //   text = document.querySelector('.change');
+  //   button.classList.remove('opac');
+  //   text.classList.add('change-opacity');
+  // });
+  // div.addEventListener ('mouseout', (event) => {
+  //   button = document.querySelector('.one');
+  //   button.classList.add('opac');
+  //   text = document.querySelector('.change');
+  //   text.classList.remove('change-opacity');
+  // });
+
+</script> -->
