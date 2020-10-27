@@ -62,7 +62,18 @@ h3 {
   position: absolute;
   bottom: 0px;
   display: flex;
-  i {
-    padding-right: 30px;
+  width: 100%;
+  justify-content: space-evenly;
+
+  p {
+    margin-bottom: 0px;
+    padding-top: 6px;
+    font-size: 24px;
   }
+}
+.square {
+  width: 20px;
+  height: 20px;
+  background-color: $grey;
+  cursor: default;
 }
