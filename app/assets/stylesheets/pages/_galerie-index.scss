@@ -50,7 +50,8 @@
 }
 .description {
   display: flex;
-  flex-direction: column;
+ // flex-direction: column;
+ justify-content: center;
   align-items: center;
   width: 40%;
   text-align: justify;
@@ -62,6 +63,24 @@
 }
 .description p {
   font-size: 15px;
+  position: relative;
+  z-index: 2;
+
+}
+.one {
+  position: absolute;
+  z-index: 1;
+  a:hover {
+      text-decoration: none;
+      color: grey;
+    }
+
+}
+.change-opacity {
+  opacity: 0.2;
+}
+.opac {
+  opacity: 0;
 }
 .photo {
   width: 60%;

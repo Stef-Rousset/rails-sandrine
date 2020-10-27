@@ -10,9 +10,9 @@
           <% next if gallery.name == @sculptures_gallery.name %>
           <% if index.even? %>
             <div class="card-gallery">
-              <div class="description">
-                <p><%= gallery.description %></p>
-                <%= link_to "Voir les oeuvres", gallery_art_pieces_path(gallery), class: "btn-blue" %>
+              <div class="description transfo">
+                <p class="change"><%= gallery.description %></p>
+                <%= link_to "Voir les oeuvres", gallery_art_pieces_path(gallery), class: "btn-blue one opac" %>
               </div>
               <div class="photo" style="background-image: url('<%= cl_image_path gallery.photo.key %>')">
                 <h4><%= gallery.name %></h4>
@@ -46,4 +46,20 @@
   </div>
 </div>
 
+<script>
+  div = document.querySelector('.transfo');
 
+  div.addEventListener ('mouseover', (event) => {
+    button = document.querySelector('.one');
+    text = document.querySelector('.change');
+    button.classList.remove('opac');
+    text.classList.add('change-opacity');
+  });
+  div.addEventListener ('mouseout', (event) => {
+    button = document.querySelector('.one');
+    button.classList.add('opac');
+    text = document.querySelector('.change');
+    text.classList.remove('change-opacity');
+  });
+
+</script>
