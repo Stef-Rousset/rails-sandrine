@@ -63,12 +63,13 @@ h3 {
   bottom: 0px;
   display: flex;
   width: 100%;
-  justify-content: space-evenly;
+  justify-content: center;
+  align-items: center;
 
   p {
     margin-bottom: 0px;
-    padding-top: 6px;
     font-size: 24px;
+    padding-left: 8px;
   }
 }
 .square {
