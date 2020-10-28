@@ -35,14 +35,14 @@
                           <% art_piece.photos.each_with_index do |photo, index| %>
                             <% if index == 0 %>
                               <div class="carousel-item active">
-                                <%= cl_image_tag photo.key, alt: "painting of #{art_piece.title}", width: 400 %>
+                                <%= cl_image_tag photo.key, alt: "painting of #{art_piece.title}" %>
                                 <p>Dimensions (en cm): <%= art_piece.dimension %></p>
                                 <p><%= art_piece.description %> </p>
                                 <p>(<%= art_piece.year%>)</p>
                               </div>
                             <% else %>
                               <div class="carousel-item">
-                                <%= cl_image_tag photo.key, alt: "painting of #{art_piece.title}", width: 400 %>
+                                <%= cl_image_tag photo.key, alt: "painting of #{art_piece.title}" %>
                               </div>
                             <% end %>
                           <% end %>

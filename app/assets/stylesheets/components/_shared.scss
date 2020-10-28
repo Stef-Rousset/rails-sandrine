@@ -8,3 +8,27 @@ margin: 0;
   width: 95%;
   margin: 0 auto;
 }
+
+
+/* responsive */
+@media (min-width: 576px) {
+  .container {
+      max-width: none;
+  }
+}
+// Small devices (landscape phones, 576px and up)
+@media (max-width: 767px) {
+  * {
+    box-sizing: border-box;
+  }
+  .main-container {
+    display: grid;
+    width: 100%;
+    grid-template-columns: 1fr;
+    margin: 0;
+    }
+  .container {
+     width: 100vw;
+     align-items: center;
+    }
+}

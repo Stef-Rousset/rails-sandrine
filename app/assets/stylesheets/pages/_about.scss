@@ -37,7 +37,7 @@ margin-bottom: 30px;
   * {
     box-sizing: border-box;
   }
-    .home-footer, .portrait {
+    .portrait {
       display: none;
     }
     .navcolumn, .about-container {
@@ -50,6 +50,9 @@ margin-bottom: 30px;
     }
     .navcolumn {
       position: static;
+    }
+    .menu {
+      align-items: center;
     }
 }
 // Medium devices (tablets, 768px and up)

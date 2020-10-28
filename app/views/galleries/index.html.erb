@@ -12,20 +12,22 @@
             <div class="card-gallery">
               <div class="description">
                 <p><%= gallery.description %></p>
-                <%= link_to "Voir les oeuvres", gallery_art_pieces_path(gallery), class: "btn-blue" %>
               </div>
-                <div class="photo" style="background-image: url('<%= cl_image_path gallery.photo.key %>')">
-                  <h4><%= gallery.name %></h4>
-                </div>
+              <%= link_to gallery_art_pieces_path(gallery) do %>
+              <div class="photo" style="background-image: url('<%= cl_image_path gallery.photo.key %>')">
+                <span class="title"><%= gallery.name %></span>
+              </div>
+              <% end %>
             </div>
           <% else %>
             <div class="card-gallery-two">
-              <div class="photo" style="background-image: url('<%= cl_image_path gallery.photo.key%>')">
-                <h4><%= gallery.name %></h4>
-              </div>
+              <%= link_to gallery_art_pieces_path(gallery) do %>
+                <div class="photo" style="background-image: url('<%= cl_image_path gallery.photo.key%>')">
+                  <span class="title"><%= gallery.name %></span>
+                </div>
+              <% end %>
               <div class="description">
                <p><%= gallery.description %></p>
-               <%= link_to "Voir les oeuvres", gallery_art_pieces_path(gallery), class: "btn-blue" %>
               </div>
             </div>
           <% end %>
@@ -36,11 +38,12 @@
         <div class="card-gallery">
           <div class="description">
             <p><%= @sculptures_gallery.description %></p>
-            <%= link_to "Voir les oeuvres", gallery_art_pieces_path(@sculptures_gallery), class: "btn-blue" %>
           </div>
-          <div class="photo" style="background-image: url('<%= cl_image_path @sculptures_gallery.photo.key%>')">
-            <h4><%= @sculptures_gallery.name %></h4>
-          </div>
+          <%= link_to gallery_art_pieces_path(@sculptures_gallery) do %>
+            <div class="photo" style="background-image: url('<%= cl_image_path @sculptures_gallery.photo.key%>')">
+              <span class="title"><%= @sculptures_gallery.name %></span>
+            </div>
+          <% end %>
         </div>
     </div>
   </div>
