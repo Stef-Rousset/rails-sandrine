@@ -6,7 +6,12 @@
   <h2>Contact</h2>
   <div class="contact-image" style='background-image: url("https://res.cloudinary.com/du5qhnalh/image/upload/v1602918282/contact-1_ife7vi.jpg")'>
   </div>
+
   <div class="form">
+    <p class="texte-contact">Vous souhaitez en savoir plus sur le travail de Sandrine Rousset, ou obtenir des informations supplémentaires sur une oeuvre ?
+     Remplissez le formulaire de contact, l'artiste vous répondra dans les meilleurs délais !
+   </p>
+
     <%= simple_form_for @contact do |f| %>
 
     <%= f.input :first_name, :required => true, :label => "Votre prénom" %>

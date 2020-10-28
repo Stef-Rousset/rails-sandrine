@@ -5,11 +5,16 @@
   width: 95%;
   margin: 0 auto;
 }
-
+.texte-contact {
+  width: 60%;
+  margin-top: 30px;
+  text-align: justify;
+}
 .form {
   width: 100%;
   display: flex;
-  justify-content: center;
+  flex-direction: column;
+  align-items: center;
 }
 .simple_form {
   width: 60%;
@@ -43,4 +48,56 @@
   border-color: #eed3d7;
   color: #b94a48;
   text-align: left;
+}
+
+/*responsive */
+
+// Small devices (landscape phones, 576px and up)
+@media (max-width: 767px) {
+  * {
+    box-sizing: border-box;
+  }
+    .home-footer, .portrait {
+      display: none;
+    }
+    .navcolumn, .contact-container {
+      // height: 50vh;
+      margin: 0;
+    }
+    .contact-container {
+      width: 100%;
+     align-items: center;
+    }
+    .navcolumn {
+      position: static;
+    }
+}
+// Medium devices (tablets, 768px and up)
+@media (min-width: 768px) and (max-width: 991px) {
+  * {
+    box-sizing: border-box;
+  }
+  .artiste {
+    width: 25%;
+    margin: 0 auto;
+  }
+  h1 {
+    font-size: 22px;
+  }
+  h3 {
+    font-size: 20px;
+  }
+}
+
+// Large devices (desktops, 992px and up)
+@media (min-width: 992px) and (max-width: 1199px) {
+  * {
+    box-sizing: border-box;
+  }
+  h1 {
+    font-size: 22px;
+  }
+  h3 {
+    font-size: 20px;
+  }
 }

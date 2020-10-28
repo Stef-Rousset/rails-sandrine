@@ -47,25 +47,33 @@
 </div>
 
 <!-- <script>
-  img = document.querySelector('.photo');
-  img.addEventListener ('mouseover', (event) => {
-    console.log('bla')
 
+  div = document.querySelector('.transfo');
+  div.addEventListener ('mouseover', (event) => {
+    button = document.querySelector('.opac');
+    text = document.querySelector('.change');
+    button.classList.add('opac-active');
+    button.classList.remove('opac');
+    text.classList.add('change-active');
+    text.classList.remove('change');
+  });
+    button = document.querySelector('.opac-active');
+    button.addEventListener ('click', (event) => {
+    button.classList.add('opac');
+    button.classList.remove('opac-active');
+    text = document.querySelector('.change-active');
+    text.classList.add('change');
+    text.classList.remove('change-active');
+    });
+  div.addEventListener ('mouseout', (event) => {
+    button = document.querySelector('.opac-active');
+    button.classList.add('opac');
+    button.classList.remove('opac-active');
+    text = document.querySelector('.change-active');
+    text.classList.add('change');
+    text.classList.remove('change-active');
   });
 
 
-  // div = document.querySelector('.transfo');
-  // div.addEventListener ('mouseover', (event) => {
-  //   button = document.querySelector('.one');
-  //   text = document.querySelector('.change');
-  //   button.classList.remove('opac');
-  //   text.classList.add('change-opacity');
-  // });
-  // div.addEventListener ('mouseout', (event) => {
-  //   button = document.querySelector('.one');
-  //   button.classList.add('opac');
-  //   text = document.querySelector('.change');
-  //   text.classList.remove('change-opacity');
-  // });
-
-</script> -->
+</script>
+ -->
