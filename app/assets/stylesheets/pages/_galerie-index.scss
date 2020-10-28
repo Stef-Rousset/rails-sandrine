@@ -18,60 +18,127 @@
 }
 .card-gallery {
   display: flex;
+  align-items: center;
   margin-bottom: 40px;
-  height: 160px;
+  height: 15%;
   .description {
     margin-right: 30px;
   }
 }
-.card-gallery h4 {
-  color: white;
-  font-style: italic;
-  font-size: 30px;
-  padding-top: 25%;
-  padding-left: 3%;
-  text-shadow: 1px 1px 1px grey;
-  position: relative;
-}
 .card-gallery-two {
   display: flex;
+  align-items: center;
   margin-bottom: 40px;
-  height: 160px;
+  height: 15%;
   .description {
     margin-left: 30px;
   }
 }
-.card-gallery-two h4 {
+.title {
   color: white;
   font-style: italic;
   font-size: 30px;
-  padding-top: 25%;
-  padding-left: 3%;
+  font-family: Alegreya Sans;
+  font-weight: bold;
   text-shadow: 1px 1px 1px grey;
 }
 .description {
   display: flex;
- flex-direction: column;
   align-items: center;
   width: 40%;
+  height: 25vh;
   text-align: justify;
   overflow: auto;
-    a:hover {
-      text-decoration: none;
-      color: grey;
-    }
-}
-.description p {
-  font-size: 15px;
-  a:hover {
-      text-decoration: none;
-      color: grey;
-    }
-
+    p {
+    font-size: 15px;
+  }
 }
 .photo {
-  width: 60%;
+  width: 40vw;
+  height: 25vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
   background-size: cover;
   background-position: center;
+}
+.card-gallery a:hover {
+    text-decoration: none;
+    opacity: 0.8;
+}
+.card-gallery-two a:hover  {
+    text-decoration: none;
+    opacity: 0.8;
+}
+
+
+/*responsive */
+
+// Small devices (landscape phones, 576px and up)
+@media (max-width: 767px) {
+  * {
+    box-sizing: border-box;
+  }
+    .navcolumn, .container {
+      // height: 50vh;
+      margin: 0;
+    }
+    .navcolumn {
+      position: static;
+    }
+    .menu {
+      align-items: center;
+    }
+    .gallery-paintings, .gallery-sculptures {
+      align-items: center;
+      }
+    .gallery-sculptures h2 {
+      margin-top: 0px;
+    }
+    .card-gallery, .card-gallery-two {
+        p {
+        display: none;
+      }
+    }
+    .description {
+      display: none;
+    }
+    .card-gallery, .card-gallery-two {
+      flex-direction: column;
+      align-items: center;
+      margin-bottom: 20px;
+      .photo {
+      width: 100vw;
+      }
+    }
+}
+// Medium devices (tablets, 768px and up)
+@media (min-width: 768px) and (max-width: 991px) {
+  * {
+    box-sizing: border-box;
+  }
+  .artiste {
+    width: 25%;
+    margin: 0 auto;
+  }
+  h1 {
+    font-size: 22px;
+  }
+  h3 {
+    font-size: 20px;
+  }
+}
+
+// Large devices (desktops, 992px and up)
+@media (min-width: 992px) and (max-width: 1199px) {
+  * {
+    box-sizing: border-box;
+  }
+  h1 {
+    font-size: 22px;
+  }
+  h3 {
+    font-size: 20px;
+  }
 }
 
