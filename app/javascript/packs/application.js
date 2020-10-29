@@ -31,6 +31,7 @@ import "bootstrap";
 document.addEventListener('turbolinks:load', () => {
   // Call your functions here, e.g:
   // initSelect2();
+  $('.carousel').carousel({ interval: 3000, touch: true }); // le carousel démarre sans avoir à recharger la page
 });
 
 

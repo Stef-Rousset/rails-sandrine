@@ -30,7 +30,7 @@
                     </div>
                     <div class="modal-body">
                <!--        carousel -->
-                      <div id="myCarousel" class="carousel slide" data-ride="carousel" data-interval="3000" >
+                      <div id="myCarousel" class="carousel slide carousel-fade" data-ride="carousel" data-interval="3000" >
                         <div class="carousel-inner">
                           <% art_piece.photos.each_with_index do |photo, index| %>
                             <% if index == 0 %>
@@ -61,7 +61,7 @@
                       </div>
                     </div>
               <!--     fin carousel -->
-                     <div class="modal-footer">
+                     <div class="modal-footer" data-turbolinks="false">  <!-- turbolinks false: la modal est fermée quand on revient sur la page ap avoir cliqué sur btn plus d'infos -->
                         <%= link_to "Plus d'informations", contacts_path, class: "btn-blue" %>
                       <button type="button" class="btn btn-blue" data-dismiss="modal">Close</button>
                      </div>
