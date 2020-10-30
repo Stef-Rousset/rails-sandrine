@@ -30,7 +30,7 @@
                     </div>
                     <div class="modal-body">
                <!--        carousel -->
-                      <div id="myCarousel" class="carousel slide carousel-fade" data-ride="carousel" data-interval="3000" >
+                      <div id="myCarousel" class="carousel slide carousel-fade" data-ride="carousel" >
                         <div class="carousel-inner">
                           <% art_piece.photos.each_with_index do |photo, index| %>
                             <% if index == 0 %>
@@ -57,7 +57,7 @@
                             <span class="carousel-control-next-icon" aria-hidden="true"></span>
                             <span class="sr-only">Next</span>
                           </a>
-                          <% end %>
+                        <% end %>
                       </div>
                     </div>
               <!--     fin carousel -->
