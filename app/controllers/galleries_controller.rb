@@ -8,6 +8,7 @@ class GalleriesController < ApplicationController
 
   def show
     @gallery = Gallery.find(gallery_params)
+    @sculptures_gallery = Gallery.find_by(name: "Entre Terre et Pierres")
   end
 
   private
