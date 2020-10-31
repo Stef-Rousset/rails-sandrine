@@ -3,18 +3,18 @@ class GalleriesController < ApplicationController
 
   def index
     @galleries = Gallery.all
-    @sculptures_gallery = Gallery.find_by(name: "Entre Terre et Pierres")
+    # @sculptures_gallery = Gallery.find_by(name: "Entre Terre et Pierres")
   end
 
-  def show
-    @gallery = Gallery.find(gallery_params)
-    @sculptures_gallery = Gallery.find_by(name: "Entre Terre et Pierres")
-  end
+  # def show
+  #   @gallery = Gallery.find(gallery_params)
+  #   @sculptures_gallery = Gallery.find_by(name: "Entre Terre et Pierres")
+  # end
 
-  private
+  # private
 
-  def gallery_params
-    params.require(:gallery).permit(:name,:description, :photo, :art_pieces)
-  end
+  # def gallery_params
+  #   params.require(:gallery).permit(:name,:description, :photo, :art_pieces)
+  # end
 
 end
