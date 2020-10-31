@@ -9,7 +9,7 @@ class Contact < MailForm::Base
       #this is the subject for the email generated, it can be anything you want
       subject: "Demande d'informations/ formulaire de contact",
       to: 'stephanierousset59@gmail.com',
-      from: %("#{name}" <#{email}>)
+      from: %("#{first_name}" "#{last_name}" <#{email}>)
       #the form will display the name entered by the user followed by the email
     }
   end
