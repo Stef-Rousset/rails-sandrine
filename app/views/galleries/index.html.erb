@@ -7,7 +7,8 @@
     <div class="gallery-paintings">
       <h2>GALERIE DE PEINTURES</h2>
         <% @galleries.each_with_index do |gallery, index| %>
-          <% next if gallery.name == @sculptures_gallery.name %>
+
+          <% next if gallery == @galleries.sculptures %>
           <% if index.even? %>
             <div class="card-gallery">
               <div class="description">
@@ -36,47 +37,18 @@
     <div class="gallery-sculptures">
       <h2>GALERIE DE SCULPTURES</h2>
         <div class="card-gallery">
-          <div class="description">
-            <p><%= @sculptures_gallery.description %></p>
-          </div>
-          <%= link_to gallery_art_pieces_path(@sculptures_gallery) do %>
-            <div class="photo" style="background-image: url('<%= cl_image_path @sculptures_gallery.photo.key%>')">
-              <span class="title"><%= @sculptures_gallery.name %></span>
+          <% @galleries.sculptures.each do |gallery| %>
+            <div class="description">
+              <p><%= gallery.description %></p>
             </div>
+            <%= link_to gallery_art_pieces_path(gallery) do %>
+              <div class="photo" style="background-image: url('<%= cl_image_path gallery.photo.key%>')">
+                <span class="title"><%= gallery.name %></span>
+              </div>
+            <% end %>
           <% end %>
         </div>
     </div>
   </div>
 </div>
 
-<!-- <script>
-
-  div = document.querySelector('.transfo');
-  div.addEventListener ('mouseover', (event) => {
-    button = document.querySelector('.opac');
-    text = document.querySelector('.change');
-    button.classList.add('opac-active');
-    button.classList.remove('opac');
-    text.classList.add('change-active');
-    text.classList.remove('change');
-  });
-    button = document.querySelector('.opac-active');
-    button.addEventListener ('click', (event) => {
-    button.classList.add('opac');
-    button.classList.remove('opac-active');
-    text = document.querySelector('.change-active');
-    text.classList.add('change');
-    text.classList.remove('change-active');
-    });
-  div.addEventListener ('mouseout', (event) => {
-    button = document.querySelector('.opac-active');
-    button.classList.add('opac');
-    button.classList.remove('opac-active');
-    text = document.querySelector('.change-active');
-    text.classList.add('change');
-    text.classList.remove('change-active');
-  });
-
-
-</script>
- -->
