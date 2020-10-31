@@ -7,8 +7,7 @@
     <div class="gallery-paintings">
       <h2>GALERIE DE PEINTURES</h2>
         <% @galleries.each_with_index do |gallery, index| %>
-
-          <% next if gallery == @galleries.sculptures %>
+          <% next if gallery.name == "Entre Terre et Pierres" %>
           <% if index.even? %>
             <div class="card-gallery">
               <div class="description">
