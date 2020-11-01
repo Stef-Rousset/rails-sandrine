@@ -30,7 +30,7 @@ class ArtPiecesController < ApplicationController
 
   def update
     @art_piece.update(art_piece_params)
-    redirect_to gallery_art_pieces_path(@gallery)
+    redirect_to gallery_art_pieces_path(@art_piece.gallery)
   end
 
   def destroy
@@ -43,6 +43,7 @@ class ArtPiecesController < ApplicationController
   def set_art_piece
     @art_piece = ArtPiece.find(params[:id])
   end
+
   def art_piece_params
     params.require(:art_piece).permit(:title, :description, :dimension, :year, :gallery_id, photos: [])
   end
