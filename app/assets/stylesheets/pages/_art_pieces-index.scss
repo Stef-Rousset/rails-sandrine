@@ -17,9 +17,9 @@ h2 {
   flex-direction: column;
   justify-content: center;
   width: 30%;
-  height: 250px;
+  height: 300px;
   h4 {
-  font-size: 18px;
+  font-size: 24px;
   color: black;
   text-align: center;
   margin-top: 5px;
@@ -49,10 +49,19 @@ h2 {
     color: black;
   }
 }
-.modal-footer a:hover {
+.modal-footer {
+  justify-content: space-around;
+  a:hover {
   text-decoration: none;
   color: grey;
-
+  }
+}
+.plus {
+  width: 200px;
+}
+.btn.btn-blue {
+  font-size: none;
+  width: 200px;
 }
 .modal-title {
   color: black;
