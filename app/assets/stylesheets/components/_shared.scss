@@ -14,10 +14,12 @@ display: grid;
 width: 100%;
 grid-template-columns: 25% 75%;
 margin: 0;
+min-height: -webkit-fill-available;
 }
 .container {
   width: 95%;
   margin: 0 auto;
+  min-height: -webkit-fill-available;
 }
 
 
