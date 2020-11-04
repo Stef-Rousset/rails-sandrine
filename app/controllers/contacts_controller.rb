@@ -10,9 +10,9 @@ class ContactsController < ApplicationController
     @contact.request = request
     if @contact.deliver
       @contact = Contact.new # remmettre à zero le formulaire
-      flash[:notice] = 'Merci pour votre message, je reviens vers vous très prochainement !'
+      # flash[:notice] = 'Merci pour votre message, je reviens vers vous très prochainement !'
       # pas de .now avec flach quand on redirect, seulement quand render
-      redirect_to contacts_path
+      redirect_to contacts_path, notice: 'Merci pour votre message, je reviens vers vous très prochainement !'
     else
       flash.now[:alert] = "Votre message n'a pas été envoyé"
       render :index
