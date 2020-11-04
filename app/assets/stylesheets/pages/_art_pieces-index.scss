@@ -107,6 +107,9 @@ h2 {
     }
     .card-art-piece {
       width: 95%;
+      h4 {
+        font-size: 16px;
+      }
     }
     .art_pieces {
       display: grid;
@@ -132,6 +135,9 @@ h2 {
   }
    .card-art-piece {
       width: 95%;
+      h4 {
+        font-size: 20px;
+      }
     }
     .art_pieces {
       display: grid;
@@ -152,5 +158,8 @@ h2 {
   }
   h3 {
     font-size: 20px;
+  }
+  .card-art-piece h4 {
+        font-size: 20px;
   }
 }
