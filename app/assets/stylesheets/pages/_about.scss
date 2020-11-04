@@ -58,19 +58,10 @@ details > p {
     .portrait {
       display: none;
     }
-    .navcolumn, .about-container {
-      // height: 50vh;
-      margin: 0;
-    }
     .about-container {
+      margin: 0;
       width: 100%;
      align-items: center;
-    }
-    .navcolumn {
-      position: static;
-    }
-    .menu {
-      align-items: center;
     }
 }
 // Medium devices (tablets, 768px and up)

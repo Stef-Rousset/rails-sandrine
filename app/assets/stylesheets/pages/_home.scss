@@ -99,8 +99,9 @@ h3 {
     }
     .home-navcolumn {
       height: auto;
+      min-height: -webkit-fit-content;
     }
-    .parentheses {
+    #parentheses {
       font-size: 30px;
       padding-left: 10%;
     }
