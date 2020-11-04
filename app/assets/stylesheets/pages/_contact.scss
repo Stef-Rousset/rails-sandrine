@@ -73,6 +73,12 @@
     .navcolumn {
       position: static;
     }
+    .menu {
+    margin-top: 15%;
+    }
+    h2 {
+      margin-top: 20px;
+    }
 }
 // Medium devices (tablets, 768px and up)
 @media (min-width: 768px) and (max-width: 991px) {
@@ -88,6 +94,9 @@
   }
   h3 {
     font-size: 20px;
+  }
+  .contact-texte {
+    padding: 0px 10px;
   }
 }
 
