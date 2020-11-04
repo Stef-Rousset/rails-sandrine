@@ -6,10 +6,18 @@
   <h2>Quelques mots</h2>
   <div class="image" style='background-image: url("https://res.cloudinary.com/du5qhnalh/image/upload/v1602610583/about_ofjnpn.jpg")'>
   </div>
-  <div class="texte">
-    <%= cl_image_tag ("sand_rw6o9t"), width: 200, height: 200, crop: :fit, class: "portrait" %>
-    <p>Fantaisies, éclats, rêveries, moments suspendus, lieux indéfinis mais qui font écho, réminiscences…
-      L’invitation aux voyages est là; voyage évocateur, intérieur, hors du temps, apaisant.
-    Laissez-vous emporter au gré des couleurs, des atmosphères et imaginez votre histoire …</p>
+  <div class="contenu">
+    <%= cl_image_tag ("sand_rw6o9t"), crop: :fit, class: "portrait" %>
+    <div class="texte">
+      <p>Fantaisies, éclats, rêveries, moments suspendus, lieux indéfinis mais qui font écho, réminiscences…
+        L’invitation aux voyages est là; voyage évocateur, intérieur, hors du temps, apaisant.
+      Laissez-vous emporter au gré des couleurs, des atmosphères et imaginez votre histoire …
+      <details>
+        <summary>Plus d'informations</summary>
+        <p>Pour en savoir un peu plus sur l'artiste, rendez-vous sur &ensp;<i class="fab fa-facebook-f"></i>
+        </p>
+      </details>
+      </p>
+    </div>
   </div>
 </div>
