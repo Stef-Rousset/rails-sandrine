@@ -142,7 +142,7 @@ h2 {
     .art_pieces {
       display: grid;
       grid-template-columns: 1fr 1fr;
-      justify-items: center;
+      justify-items: start;
       grid-column-gap: 10px;
       grid-row-gap: 20px;
     }
