@@ -16,6 +16,18 @@
   background-position: center;
   background-size: cover;
 }
+.contact-artiste {
+  display: flex;
+  align-items: center;
+  margin-top: 20px;
+  height: 30%;
+}
+.photo-id {
+  width: 15%;
+  height: 30%;
+  margin-right: 30px;
+  border-radius: 50%;
+}
 .contact-texte {
   width: 100%;
   margin-top: 30px;
@@ -67,7 +79,7 @@
       width: 100%;
      align-items: center;
     }
-    .contact-texte {
+    .contact-artiste {
     padding: 0px 10px;
     }
 }
