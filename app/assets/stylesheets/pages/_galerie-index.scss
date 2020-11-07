@@ -44,15 +44,14 @@
 }
 .description {
   display: flex;
-  align-items: center;
   width: 40%;
   height: 25vh;
-  overflow: scroll;
+  overflow: auto;
   text-align: justify;
   p {
-    /* pour que le overflow:scroll fonctionne bien */
+    /* pour que le overflow fonctionne bien */
     height: 100%;
-    padding: 5px 0;
+    padding: 10px 0;
   }
 }
 .photo {
