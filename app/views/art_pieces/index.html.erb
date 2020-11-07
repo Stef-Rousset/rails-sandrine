@@ -3,7 +3,7 @@
 <% content_for :meta_image, cl_image_path("banner.jpg") %>
 
 <div class="container">
-  <h2><%= @gallery.name %></h2>
+  <h2 id="titre"><%= @gallery.name %></h2>
   <div class="art_pieces">
     <% @art_pieces.each do |art_piece|%>
       <div class="card-art-piece">
@@ -72,6 +72,9 @@
           <% end %>
         </div>
     <% end %>
+  </div>
+  <div class="ancre">
+    <%= link_to "Haut de page", gallery_art_pieces_path(@gallery, anchor: 'titre'), class: "btn-blue titre" %>
   </div>
   <% if user_signed_in? && current_user.admin? %>
     <div class="ajout">
