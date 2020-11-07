@@ -49,6 +49,11 @@
   height: 25vh;
   overflow: scroll;
   text-align: justify;
+  p {
+    /* pour que le overflow:scroll fonctionne bien */
+    height: 100%;
+    padding: 5px 0;
+  }
 }
 .photo {
   width: 40vw;
