@@ -3,11 +3,12 @@
   <head>
     <title><%= meta_title %></title>
     <meta name="description" content="<%= meta_description %>">
-    <!-- recharger la homepage à chaque fois pour que l'animation du titre se fasse à chaque fois
-      <% if (controller.controller_name == "pages" && controller.action_name == "home")%>
+    <!-- recharger la page quand navigation avec boutons back et forward sur Safari
+         pour que l'animation des photos se fasse à chaque fois -->
+    <% if (controller.controller_name == "galleries" && controller.action_name == "index")%>
       <meta name="turbolinks-visit-control" content="reload" >
     <% end %>
-    -->
+
 
     <!-- Facebook Open Graph data -->
     <meta property="og:title" content="<%= meta_title %>" />
