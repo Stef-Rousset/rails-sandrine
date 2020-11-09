@@ -3,9 +3,8 @@
   <head>
     <title><%= meta_title %></title>
     <meta name="description" content="<%= meta_description %>">
-    <!-- recharger la page quand navigation avec boutons back et forward sur Safari
-         pour que l'animation des photos se fasse à chaque fois -->
-    <% if (controller.controller_name == "galleries" && controller.action_name == "index")%>
+    <!-- recharger la page home pour que l'animation parnethèse se fasse à chaque fois -->
+    <% if (controller.controller_name == "pages" && controller.action_name == "home")%>
       <meta name="turbolinks-visit-control" content="reload" >
     <% end %>
 
