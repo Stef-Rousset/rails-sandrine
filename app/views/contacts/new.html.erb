@@ -24,15 +24,15 @@
     <%= f.submit 'Envoyer', class: "btn-blue form-btn" %>
   <% end %>
   </div>
-  <% if flash.any? %>
+  <!-- <% if flash.any? %>
   <% flash.keys.each do |flash_key| %>
-    <%- next if flash_key.to_s == 'timedout' %>
+    <% next if flash_key.to_s == 'timedout' %>
     <div class="alert-message <%= flash_key %>">
-      <a class="close" data-dismiss="alert" href="#"> x</a>
+      <a class="close" data-dismiss="alert" href="#">x</a>
       <%= flash.discard(flash_key) %>
     </div>
   <% end %>
-<% end %>
+<% end %> -->
 </div>
 
 

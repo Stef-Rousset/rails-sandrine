@@ -7,5 +7,5 @@ Rails.application.routes.draw do
     resources :art_pieces, only: [:index, :new, :create, :edit, :update ]
   end
   resources :art_pieces, only: [:destroy]
-  resources :contacts, only: [:index, :create]
+  resources :contacts, only: [:new, :create]
 end
