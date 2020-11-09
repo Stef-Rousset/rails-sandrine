@@ -31,11 +31,8 @@
   <body>
     <div class="main-container">
       <%= render 'shared/menu' unless (controller.controller_name == "pages" && controller.action_name == "home")%>
-      <% if (controller.controller_name != "contact" && controller.action_name != "create")%>
-        <%= render 'shared/flashes' %>
-      <% end %>
+      <%= render 'shared/flashes' unless controller.controller_name == "contact" %>
       <%= yield %>
     </div>
-
   </body>
 </html>
