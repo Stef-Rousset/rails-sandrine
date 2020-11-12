@@ -51,6 +51,12 @@
 .form-btn {
   margin: 30px 0px;
   border-style: none;
+  transition: 400ms ease-in-out;
+  &:hover {
+  text-decoration: none;
+  color: grey;
+  border-radius: 50px;
+  }
 }
 
 .notice {
