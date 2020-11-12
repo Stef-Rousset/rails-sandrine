@@ -73,9 +73,11 @@
         </div>
     <% end %>
   </div>
-  <div class="ancre">
-    <%= link_to "Haut de page", gallery_art_pieces_path(@gallery, anchor: 'titre'), class: "btn-blue titre" %>
-  </div>
+  <% if @art_pieces.size > 9 %>
+    <div class="ancre">
+      <%= link_to "Haut de page", gallery_art_pieces_path(@gallery, anchor: 'titre'), class: "btn-blue titre" %>
+    </div>
+  <% end %>
   <% if user_signed_in? && current_user.admin? %>
     <div class="ajout">
       <!--   a modif pour ne rendre accessible qu'a admin -->
