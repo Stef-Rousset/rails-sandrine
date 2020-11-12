@@ -35,7 +35,7 @@ document.addEventListener('turbolinks:load', () => {
   // initSelect2();
   $('.carousel').carousel({ interval: 2500, touch: true }); // le carousel démarre sans avoir à recharger la page
   imageAnimation();
-  parenthese();
+  // parenthese();
 });
 
 
