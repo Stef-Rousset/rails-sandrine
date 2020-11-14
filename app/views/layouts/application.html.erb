@@ -2,6 +2,7 @@
 <html>
   <head>
     <title><%= meta_title %></title>
+    <%= favicon_link_tag "favicon.ico" %>
     <meta name="description" content="<%= meta_description %>">
     <!-- recharger la page home pour que l'animation parnethèse se fasse à chaque fois -->
     <% if (controller.controller_name == "pages" && controller.action_name == "home")%>
