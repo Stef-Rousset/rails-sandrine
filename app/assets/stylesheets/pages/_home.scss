@@ -90,14 +90,14 @@ h3 {
 // animation du titre
 .anim {
     animation: anim-letters;
-    animation-duration: 1s;
+    animation-duration: 1500ms;
   &_letter {
     animation: anim-letters;
     animation-duration: 1s;
     animation-fill-mode: backwards;
     @for $i from 1 through 19 {
       &-#{$i} {
-        animation-delay: 50ms * $i;
+        animation-delay: 100ms * $i;
         -webkit-animation-delay: 100ms * $i;
       }
     }
