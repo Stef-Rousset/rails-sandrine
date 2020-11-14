@@ -1,5 +1,5 @@
 Rails.application.configure do
-  config.action_mailer.default_url_options = { host: "http://TODO_PUT_YOUR_DOMAIN_HERE" }
+  config.action_mailer.default_url_options = { host: "http://www.sandrine-rousset.art" }
   # Settings specified here will take precedence over those in config/application.rb.
 
   # Code is not reloaded between requests.
@@ -63,8 +63,8 @@ Rails.application.configure do
 
   config.action_mailer.perform_caching = false
 
-  config.action_mailer_default_url_options = { host: ' https://sandrine-website.herokuapp.com/' }
-  Rails.application.routes.default_url_options[:host] = 'https://sandrine-website.herokuapp.com/'
+  config.action_mailer_default_url_options = { host: 'http://www.sandrine-rousset.art' }
+  Rails.application.routes.default_url_options[:host] = 'http://www.sandrine-rousset.art'
   config.action_mailer.delivery_method = :smtp
   config.action_mailer.perform_deliveries = true
   config.action_mailer.raise_delivery_errors = false
