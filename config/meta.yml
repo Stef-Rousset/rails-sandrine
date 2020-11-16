@@ -1,5 +1,5 @@
 meta_product_name: "Sandrine Rousset"
 meta_title: "Sandrine Rousset, artiste peintre et sculptrice"
 meta_description: "Découvrez les oeuvres (peintures et sculptures) réalisées par Sandrine Rousset"
-meta_image: "banner.jpg" # should exist in `app/assets/images/`
+meta_image: "cover.jpg" # should exist in `app/assets/images/`
 
