@@ -5,7 +5,7 @@ class ArtPiecesController < ApplicationController
 
   def index
     @gallery = Gallery.find(params[:gallery_id])
-    @art_pieces = ArtPiece.where(gallery: @gallery)
+    @art_pieces = ArtPiece.where(gallery: @gallery).order(year: :desc)
   end
 
   def new
