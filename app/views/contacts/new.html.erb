@@ -15,24 +15,19 @@
     </div>
   </div>
   <div class="form">
-    <%= simple_form_for @contact do |f| %>
+    <div class="form-content">
+      <%= simple_form_for @contact do |f| %>
 
-    <%= f.input :first_name, :required => true, :label => "Votre prénom" %>
-    <%= f.input :last_name, :required => true, :label => "Votre nom" %>
-    <%= f.input :email, :required => true, :label => "Votre email" %>
-    <%= f.input :message, :as => :text, :required => true, :label => "Votre message", :input_html => {:rows => 6} %>
-    <%= f.submit 'Envoyer', class: "btn-blue form-btn" %>
-  <% end %>
-  </div>
-  <!-- <% if flash.any? %>
-  <% flash.keys.each do |flash_key| %>
-    <% next if flash_key.to_s == 'timedout' %>
-    <div class="alert-message <%= flash_key %>">
-      <a class="close" data-dismiss="alert" href="#">x</a>
-      <%= flash.discard(flash_key) %>
+      <%= f.input :first_name, :required => true, :label => "Votre prénom" %>
+      <%= f.input :last_name, :required => true, :label => "Votre nom" %>
+      <%= f.input :email, :required => true, :label => "Votre email" %>
+      <%= f.input :message, :as => :text, :required => true, :label => "Votre message", :input_html => {:rows => 6} %>
+      <%= f.submit 'Envoyer', class: "btn-blue form-btn" %>
+      <% end %>
     </div>
-  <% end %>
-<% end %> -->
+    <%= cl_image_tag "chevalet_l4j08l", alt: "chevalet", class: "chevalet" %>
+  </div>
+
 </div>
 
 
