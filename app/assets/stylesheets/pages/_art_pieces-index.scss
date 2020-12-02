@@ -1,3 +1,4 @@
+
 .art_pieces {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
@@ -36,8 +37,10 @@ h2 {
   object-fit: contain;
   box-shadow: 0 0 10px rgba(0,0,0,0.2);
   cursor: pointer;
+  transition: all ease-in-out;
   &:hover {
     opacity: 0.9;
+    transform: scale(1.025);
   }
 }
 .liens {
