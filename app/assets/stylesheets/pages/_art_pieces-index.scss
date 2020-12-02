@@ -106,12 +106,12 @@ h2 {
   margin: 20px 0;
 }
 .titre {
-  transition: 400ms ease-in-out;
+  transition: all 200ms ease-in-out;
   background-color: $blue;
   &:hover {
   text-decoration: none;
   color: grey;
-  border-radius: 50px;
+  transform: scale(1.01);
   }
 }
 
