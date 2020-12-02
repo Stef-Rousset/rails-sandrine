@@ -107,6 +107,7 @@ h2 {
 }
 .titre {
   transition: 400ms ease-in-out;
+  background-color: $blue;
   &:hover {
   text-decoration: none;
   color: grey;
