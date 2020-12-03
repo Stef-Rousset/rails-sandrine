@@ -3,7 +3,7 @@
 <% content_for :meta_image, cl_image_path("cover.jpg") %>
 
 <div class="container">
-  <h2 id="titre"><%= @gallery.name %></h2>
+  <h2><%= @gallery.name %></h2>
   <div class="art_pieces">
     <% @art_pieces.each do |art_piece|%>
       <div class="card-art-piece">
@@ -74,8 +74,8 @@
     <% end %>
   </div>
   <% if @art_pieces.size > 9 %>
-    <div class="ancre">
-      <%= link_to '<i class="fas fa-chevron-up"></i>'.html_safe, gallery_art_pieces_path(@gallery, anchor: 'titre'), class: "btn-blue titre" %>
+     <div class="ancre" onclick="backToTop()">
+      <button class ='btn-blue titre'><i class="fas fa-chevron-up"></i></button>
     </div>
   <% end %>
   <% if user_signed_in? && current_user.admin? %>
@@ -85,6 +85,13 @@
     </div>
   <% end %>
 </div>
-
+<script>
+  function backToTop() {
+    window.scrollTo({
+      top: 0,
+      behavior: 'smooth'
+    })
+  }
+</script>
 
 

@@ -106,12 +106,14 @@ h2 {
   margin: 20px 0;
 }
 .titre {
-  transition: all 200ms ease-in-out;
+  transition: 200ms ease-in-out;
   background-color: $blue;
+  opacity: 0.7;
+  overflow: hidden;
+  width: 40px;
   &:hover {
   text-decoration: none;
-  color: grey;
-  transform: scale(1.01);
+  opacity: 1;
   }
 }
 

@@ -65,13 +65,12 @@
   border-radius: 50px;
   }
 }
-.chevalet {
-  width: 200px;
+.pot {
+  width: 250px;
   object-fit: cover;
   z-index: 1;
   position: absolute;
   right: 5px;
-
 }
 .notice {
   background-color: #dff0d8;
@@ -101,7 +100,7 @@
     .contact-artiste {
     padding: 0px 10px;
     }
-    .chevalet {
+    .pot {
       display: none;
     }
 }
