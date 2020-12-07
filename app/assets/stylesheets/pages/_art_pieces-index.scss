@@ -43,6 +43,9 @@ h2 {
     transform: scale(1.025);
   }
 }
+.download {
+  pointer-events: none; // remove the "save image" context menu, makes all img elements non-reactive to any mouse events such as dragging, hovering, clicking
+}
 .liens {
   display: flex;
   justify-content: space-around;
