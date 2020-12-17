@@ -28,14 +28,16 @@ import "bootstrap";
 
 // Internal imports, e.g:
 import { imageAnimation } from '../components/image_animation';
-import { parenthese} from '../components/parenthese';
+import { backToTop} from '../components/back_to_top';
+import { displayTitle} from '../components/display_title';
 // import { initSelect2 } from '../components/init_select2';
 document.addEventListener('turbolinks:load', () => {
   // Call your functions here, e.g:
   // initSelect2();
   $('.carousel').carousel({ interval: 2500, touch: true }); // le carousel démarre sans avoir à recharger la page
   imageAnimation();
-  // parenthese();
+  backToTop();
+  displayTitle();
 });
 
 

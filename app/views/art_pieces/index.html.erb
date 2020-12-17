@@ -74,7 +74,7 @@
     <% end %>
   </div>
   <% if @art_pieces.size > 9 %>
-     <div class="ancre" onclick="backToTop()">
+     <div class="ancre">
       <button class ='btn-blue titre'><i class="fas fa-chevron-up"></i></button>
     </div>
   <% end %>
@@ -85,13 +85,6 @@
     </div>
   <% end %>
 </div>
-<script>
-  function backToTop() {
-    window.scrollTo({
-      top: 0,
-      behavior: 'smooth'
-    })
-  }
-</script>
+
 
 

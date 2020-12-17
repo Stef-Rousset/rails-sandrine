@@ -78,16 +78,7 @@ h3 {
   background-color: $grey;
   cursor: default;
 }
-// animation du titre
-// #parentheses {
-//   transition: transform 3s;
-//   transform: translateY(300%);
-// }
-// #parentheses.translate {
-//   transform: translateY(0%);
-// }
 
-// animation du titre
 .anim {
     animation: anim-letters;
     animation-duration: 1500ms;
