@@ -1,7 +1,6 @@
 const secretCode = () => {
   const pressedArray = [];
-  const secretCode = process.env["SECRET_KEY"];
-  console.log(secretCode);
+  const secretCode = process.env["SECRET_KEY"]; // to access the variable from .env
   const navbar = document.querySelector('.navbar');
   function handleSecretCode(event){
     pressedArray.push(event.key);
