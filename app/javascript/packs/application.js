@@ -28,8 +28,9 @@ import "bootstrap";
 
 // Internal imports, e.g:
 import { imageAnimation } from '../components/image_animation';
-import { backToTop} from '../components/back_to_top';
-import { displayTitle} from '../components/display_title';
+import { backToTop } from '../components/back_to_top';
+import { displayTitle } from '../components/display_title';
+import { secretCode } from '../components/secret_code';
 // import { initSelect2 } from '../components/init_select2';
 document.addEventListener('turbolinks:load', () => {
   // Call your functions here, e.g:
@@ -38,6 +39,7 @@ document.addEventListener('turbolinks:load', () => {
   imageAnimation();
   backToTop();
   displayTitle();
+  secretCode();
 });
 
 
