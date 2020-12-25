@@ -13,7 +13,9 @@
     <%= link_to "Contact", new_contact_path, class: "trait-bis" %>
   </div>
   <div class="home-footer">
-    <%= render 'shared/navbar' %>
+    <div class="navbar" style="display: none;">
+      <%= render 'shared/navbar' %>
+    </div>
     <%= link_to '<i class="fab fa-facebook-f"></i>'.html_safe, "https://www.facebook.com/sandrine.rousset.507", :target => "_blank" %>
   </div>
 </div>
